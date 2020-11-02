@@ -58,6 +58,12 @@ li {
     list-style-type: none; /* Убираем маркеры */
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 :root {
     --main-text-cl: #757575;
     --accent-cl: #2196F3;
@@ -437,6 +443,7 @@ body {
 
 .content{
     justify-content: space-between;
+    margin: 15px 15px;
 }
 
 .content .link {
