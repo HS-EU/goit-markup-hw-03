@@ -61,7 +61,7 @@ li {
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 :root {
@@ -95,11 +95,12 @@ body {
 .header > .container {
     display: flex;
     align-items: center;
-    height: 80px;
 }
 
 .header .menu {
     display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .menu .menu-item:not(:last-child) {
@@ -150,6 +151,8 @@ body {
 .header .contacts {
     display: flex;
     margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .contacts .contacts-item:not(:last-child) {
@@ -443,7 +446,6 @@ body {
 
 .content{
     justify-content: space-between;
-    margin: 15px 15px;
 }
 
 .content .link {
